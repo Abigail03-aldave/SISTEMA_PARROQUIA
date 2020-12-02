@@ -1,4 +1,5 @@
 <%@ taglib uri="http://java.sun.com/jstl/core_rt" prefix="c" %>
+
 <!DOCTYPE html>
 <html lang="esS" >
 <head>
@@ -17,9 +18,8 @@
  
 <title>Intranet Parroquia | ARPYNET</title>
 </head>   
+
 <body>    
-
-
  <!-- Top content -->
         <div class="top-content">
             <div class="inner-bg">
@@ -45,7 +45,7 @@
                         		</div>
                             </div>
                             <div class="form-bottom">
-			                    <form id="id_form"  action="verIntranetHome" method="post" class="login-form">
+			                    <form id="id_form"  action="login" method="post" class="login-form">
 			                    	<div class="form-group">
 			                    		<label class="sr-only" for="form-username">Usuario</label>
 			                        	<input type="text" name="login" placeholder="Usuario..." class="form-username form-control" id="form-username">

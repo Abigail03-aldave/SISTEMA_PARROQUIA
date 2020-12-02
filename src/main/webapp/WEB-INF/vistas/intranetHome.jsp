@@ -1,37 +1,47 @@
 <%@ taglib uri="http://java.sun.com/jstl/core_rt" prefix="c" %>
-
+<jsp:include page="intranetValida.jsp" />
 <!DOCTYPE html>
 <html lang="esS" >
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-<link rel="stylesheet" href="css/bootstrap.min.css">
-    <link href="css/dashboard.css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="js/dataTables.bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrapValidator.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.css"/>
+<link rel="stylesheet" href="css/dataTables.bootstrap.min.css"/>
+<link rel="stylesheet" href="css/bootstrapValidator.css"/>
 
 
-<title>Intranet Parroquia | ARPYNET</title>
+<title>Intranet Colegio - Jorge Jacinto Gutarra</title>
 </head>
 <body>
        
-<div class="container-fluid">
-  <div class="row">
-    <jsp:include page="intranetCabecera.jsp" />
+<jsp:include page="intranetCabecera.jsp" />
 
-    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4"></main>
-      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-        <h1 class="letra">Bienvenido al sistema</h1>
-      </div>
-        </div>
-          </div>
-          
+<div class="container">&nbsp;<br>&nbsp;<br>&nbsp;<br>
+<h3>Colegio NORTE</h3>
+<h3>Bienvenido Sr(a): ${sessionScope.objUsuario.nombreCompleto}</h3>                
+<h3>DNI : ${sessionScope.objUsuario.dni}</h3>
+<h3>Roles 	</h3>
+	<ul>
+        <c:forEach var="x" items="${sessionScope.objRoles}">
+            <li>
+                   ${x.nombre} 
+            </li>
+        </c:forEach>
+    </ul>
+</div>
+  
 
+<div class="container" >
+<div class="col-md-12" align="center"> 
 
-  		
+ </div>
+</div>    		
 </body>
-<script type="text/javascript" src="js/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.9.0/feather.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
-        <script src="js/dashboard.js"></script></body>
-        <script src="js/bootstrap.min.js"></script>
 </html>
