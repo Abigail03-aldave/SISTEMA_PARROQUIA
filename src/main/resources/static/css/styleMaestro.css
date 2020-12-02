@@ -1,0 +1,34 @@
+/*Estilo Barra de Notificaciones*/	
+	#campana{
+	height:50px;
+	}
+	#notificacion{
+		position: absolute;
+		top:50px;
+		right:20px;
+		width:320px;
+		overflow: auto;
+		height:320px;
+		display:none;
+		background-color: #E6E6E6;
+	}
+	#notificacion::-webkit-scrollbar{
+	width:7px;
+	}
+	#notificacion::-webkit-scrollbar-thumb{
+	background:#F24520;
+	border-radius: 25%;
+	}
+	#navNotificacion{
+	height:45px;
+	}
+	.eleNotificacion{
+	border-radius: 10px;
+	}
+	.eleHora{
+	font-size:14px;color:#1877F2;font-weight: bold;font-family: monospace;
+	}
+	.activo {
+	  background-color: #EEEEEE;
+	}
+/*Fin Estilo Barra de Notificaciones*/	
